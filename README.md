@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/laurentzziu/to_human.svg?branch=master)](https://travis-ci.org/laurentzziu/to_human)
+
 # to_human
 
 ## Installation
