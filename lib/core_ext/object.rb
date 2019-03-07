@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-class TrueClass
+class Object
   def to_human
-    ToHuman::Humanize.new(:true).call
+    to_s
   end
 end
