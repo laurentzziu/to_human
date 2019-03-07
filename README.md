@@ -1,4 +1,7 @@
 [![Build Status](https://travis-ci.org/laurentzziu/to_human.svg?branch=master)](https://travis-ci.org/laurentzziu/to_human)
+[![Gem Version](https://badge.fury.io/rb/to_human.svg)](https://rubygems.org/gems/to_human)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9ff6d2f47b170f0b1e9b/maintainability)](https://codeclimate.com/github/laurentzziu/to_human/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/9ff6d2f47b170f0b1e9b/test_coverage)](https://codeclimate.com/github/laurentzziu/to_human/test_coverage)
 
 # to_human
 
@@ -20,6 +23,25 @@ Or install it yourself as:
 
 ## Usage
 
+Call `#to_human` on `TrueClass`, `FalseClass` and `NilClass` objects for a "human" version of the value.
+
+E.g.
+
+```ruby
+true.to_human # => "Yes"
+
+false.to_human # => "No
+
+nil.to_human # => "N\A"
+```
+
+For any other object, calling `#to_human` is an alias for `#to_s`
+
+```ruby
+1.to_human # => "1"
+
+2.0.to_human # => "2.0"
+```
 
 ## Development
 

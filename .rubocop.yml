@@ -1,0 +1,20 @@
+require: rubocop-rspec
+
+Metrics/LineLength:
+  Max: 120
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+Style/Documentation:
+  Enabled: false
+Layout/EndOfLine:
+  Enabled: false
+Lint/BooleanSymbol:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - 'bin/*'
+    - 'Gemfile'
+Style/ExpandPathArguments:
+  Exclude:
+    - '*.gemspec'
